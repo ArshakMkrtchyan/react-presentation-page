@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, red, rgb(21, 21, 85), blueviolet);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loginContainer {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    padding-top: 45px;
+    /* border: 1px solid; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.loginContainer h1 {
+    text-align: center;
+    color: beige;
+    margin-bottom: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.loginContainer input {
+    padding: 5px;
+    margin: 7px;
+    background-color: rgb(173, 11, 11);
+    color: beige;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loginContainer .nameLogin {
+    margin-left: 60px;
+}
+
+.loginContainer button {
+    padding: 5px 25px;
+    margin-left: 195px;
+    margin-top: 25px;
+    background-color: rgb(110, 23, 8);
+    color: azure;
+}
+
+.modal {
+    width: 500px;
+    height: 500px;
+    border: 3px solid;
+    position: absolute;
+    top: 100px;
+    right: 500px;
+    background-color: rgb(61, 23, 100);
+    z-index: 10;
+}
+
+.modal button {
+    background-color: rgb(71, 9, 71);
+    color: beige;
+    padding: 7px;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.modal input {
+    padding: 7px;
+    margin-top: 90px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+
+.modal .modalAdd {
+    position: absolute;
+    top: 350px;
+    left: 125px;
+    padding: 5px 25px;
+    font-weight: 900;
+    background-color: rgb(50, 8, 50);
+    border: 1px solid azure;
+}
+
+.modal .modalClose {
+    position: absolute;
+    top: 5px;
+    right: 45px;
+    background-color: rgb(177, 11, 11);
+}
+
+.modal img{
+    margin-left: 130px;
+}
+
+.presentation {
+    width: 100%;
+    height: 121vh;
+    background-image: linear-gradient(to right, red, rgb(21, 21, 85), blueviolet);
+}
+
+.presentation .mainTitle {
+    text-align: center;
+    color: beige;
+    font-weight: 900;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.presentation .logOut {
+    position: absolute;
+    margin-left: 1300px;
+    margin-top: 20px;
+    background-color: rgb(177, 11, 11);
+    padding: 5px 25px;
+    color: beige;
+}
+
+.presentation .addCont {
+    margin-top: 20px;
+    width: 200px;
+    height: 100px;
+    border: 2px solid azure;
+    margin-left: 30px;
+    padding-top: 10px;
+    background-color: rgb(126, 6, 6);
+}
+
+.presentation h3 {
+    margin-left: 30px;
+    color: beige;
+}
+
+.presentation .presentAdd {
+    margin-left: 60px;
+    margin-top: 10px;
+    padding: 5px 25px;
+    background-color: rgb(71, 9, 71);
+    color: beige;
+}
+
+.presentContainer {
+    display: flex;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, red, rgb(21, 21, 85), blueviolet);
+}
+
+.leftSide {
+    border: 3px solid azure;
+    width: 25%;
+    height: 100vh;
+}
+
+.leftSide a{
+    color: azure;
+    padding-top: 50px;
+    margin-left: 50px;
+}
+
+.rightSide {
+    border: 3px solid azure;
+    width: 75%;
+    height: 100vh;
+}
+
+.rightSide h1{
+    color: azure;
+    text-align: center;
+}
+
+.right {
+    width: 75%;
+    /* border: 1px solid; */
+    position: absolute;
+    top: 270px;
+    left: 470px;
+    z-index: 1;
+}
+
+.infoBox {
+    width: 300px;
+    height: 300px;
+    border: 1px solid azure;
+    text-align: center;
+    color: beige;
+    margin: 5px;
+}
+
+.infoBox img{
+    margin-top: 15px;
+    width: 200px;
+    height: 200px;
+}
+
+.allInfoBoxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.allimgBoxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgBox{
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid azure; */
+    text-align: center;
+    color: beige;
+    margin: 5px;
+}
+
+.imgBox img{
+    /* margin-top: 15px; */
+    width: 200px;
+    height: 200px;
 }
